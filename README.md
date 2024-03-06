@@ -45,9 +45,30 @@ wget -O server.jar https://raw.githubusercontent.com/HDPro/blynk/master/files/se
 # Run server
 java -jar /var/www/html/blynk/server.jar -dataFolder /var/www/html/blynk &
 
+# Your Server
+# http://yourserver:9443
+# email: admin@blynk.cc
+# password: auto generate
+
 # Autorun when server restart
 crontab -e
 @reboot java -jar /var/www/html/blynk/server.jar -dataFolder /var/www/html/blynk &
-# => Esc => :wq => Enter
+Press "#" => "Esc" => ":wq" => Enter
+
+```
+
+# FIX JAVA DUPLICATE VERSION
+```
+# Check java version
+java -version
+
+# Get Name JDK Package
+rpm -qa | grep jdk
+
+# Get Name Java Package
+rpm -qa | grep java
+
+# Delete Package
+rpm -e XXX (With XXX is JDK Package Name Or Java Package Name)
 
 ```
