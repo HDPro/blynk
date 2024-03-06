@@ -72,3 +72,7 @@ rpm -qa | grep java
 rpm -e XXX (With XXX is JDK Package Name Or Java Package Name)
 
 ```
+
+# DOWNLOAD BLYNK
+
+#### For Android: [Click Here](https://raw.githubusercontent.com/HDPro/blynk/master/files/Blynk_Legacy_For_Android.apk)
